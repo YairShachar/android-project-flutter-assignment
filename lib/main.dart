@@ -404,7 +404,7 @@ class _UserProfileContentState extends State<UserProfileContent> {
                                                   content:
                                                       Text('No image selected'),
                                                   duration:
-                                                      Duration(seconds: 2)));
+                                                      Duration(seconds: 3)));
                                         }
                                       },
                                       child: Text('Change avatar',
@@ -427,9 +427,6 @@ class _UserProfileContentState extends State<UserProfileContent> {
   String createInitialsFromMail(UserRepository user) {
     String mail = user.getEmail();
     String initials = "" + mail[0];
-    if (mail.substring(0, mail.indexOf('@')).length > 1) {
-      initials = initials + mail[1];
-    }
     return initials.toUpperCase();
   }
 }
