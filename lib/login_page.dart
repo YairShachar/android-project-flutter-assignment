@@ -125,7 +125,7 @@ class _LoginPageState extends State<LoginPage> {
 
   static SnackBar createTextSnackBar(String s) {
     SnackBar snackbar =
-        SnackBar(content: Text(s), duration: Duration(seconds: 5));
+        SnackBar(content: Text(s), duration: Duration(seconds: 3));
     return snackbar;
   }
 }
